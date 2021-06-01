@@ -13,7 +13,7 @@ const AccountsScreen = props => {
         //  padding:3,
          }}>
             <View style={{flex:0.15,padding:5,marginHorizontal:10}}>
-                <Icon svg={Svgs.Briefcase} iconStyle={{ color: 'blue' }}>
+                <Icon svg={Svgs.Briefcase} iconStyle={{ color: 'red' }}>
 
                 </Icon>
             </View>
