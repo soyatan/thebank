@@ -20,7 +20,11 @@ const MainNavigation = () => {
         <StatusBar barStyle={'light-content'} backgroundColor={'red'} />
         <NavigationContainer>
           <Main.Navigator>
-            <Main.Screen name="Auth" component={AuthScreen} />
+            <Main.Screen
+              name="Auth"
+              component={AuthScreen}
+              options={{headerShown: false}}
+            />
           </Main.Navigator>
         </NavigationContainer>
       </>
