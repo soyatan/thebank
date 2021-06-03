@@ -14,7 +14,7 @@ export default PersonalAuthContainer = () => {
         {/* AuthButton*/}
         {/* ForgotPassWordComponent*/}
         <Text>To become our Digital Banging customer</Text>
-        {/* Button opacity 0*/}
+        {/* AuthButton opacity 0*/}
       </View>
     </>
   );
