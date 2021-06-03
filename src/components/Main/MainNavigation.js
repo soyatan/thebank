@@ -23,9 +23,8 @@ const MainNavigation = () => {
       <>
         <StatusBar barStyle={'light-content'} backgroundColor={'red'} />
         <NavigationContainer>
-          <Main.Navigator initialRouteName="Password">
           <Main.Navigator
-            initialRouteName="Accounts"
+            initialRouteName="Password"
             options={(header = () => PasswordHeader())}>
             <Main.Screen
               name="Auth"
@@ -43,7 +42,6 @@ const MainNavigation = () => {
             />
             <Main.Screen name="Accounts" component={AccountsScreen} />
           </Main.Navigator>
-        
         </NavigationContainer>
       </>
     );

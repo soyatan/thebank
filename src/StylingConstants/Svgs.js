@@ -6,16 +6,16 @@ import DrawingAccount from '../Assets/Svgs/drawingAccount.svg';
 import GoldAccount from '../Assets/Svgs/goldAccount.svg';
 import Investment from '../Assets/Svgs/investment.svg';
 import Pos from '../Assets/Svgs/pos.svg';
-import OpenAccount from '../Assets/Svgs/newAccount.svg'
+import OpenAccount from '../Assets/Svgs/newAccount.svg';
 
-export default Svgs={
-    CreditAccount,
-    Settings,
-    Briefcase,
-    DepositAccount,
-    DrawingAccount,
-    GoldAccount,
-    Investment,
-    OpenAccount,
-    Pos
-}
+export default Svgs = {
+  CreditAccount,
+  Settings,
+  Briefcase,
+  DepositAccount,
+  DrawingAccount,
+  GoldAccount,
+  Investment,
+  OpenAccount,
+  Pos,
+};

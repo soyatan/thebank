@@ -1,7 +1,3 @@
 import Svgs from './Svgs';
 
-export {
-    Svgs,
-
-};
-
+export {Svgs};
