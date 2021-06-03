@@ -1,24 +1,46 @@
 import React from 'react';
-import { Text, View,TouchableOpacity } from 'react-native';
-import Icon from '../Assets/Icon';
+import { ScrollView } from 'react-native';
+import Item from '../Common/Item';
 import { Svgs } from '../StylingConstants'
 
 const AccountsScreen = props => {
     return (
-        <TouchableOpacity style={{flex: 0.1,
-         borderBottomWidth:1,
-         borderColor:'#cccccc',
-         flexDirection:'row',
-         alignItems:'center',
-        //  padding:3,
-         }}>
-            <View style={{flex:0.15,padding:5,marginHorizontal:10}}>
-                <Icon svg={Svgs.Briefcase} iconStyle={{ color: 'red' }}>
-
-                </Icon>
-            </View>
-            <Text >My Accounts</Text>
-        </TouchableOpacity>
+        <ScrollView style={{flex:1}}>
+            <Item
+            itemname="My Accounts"
+            svg={Svgs.Briefcase}
+        />
+            <Item
+            itemname="New Accounts"
+            svg={Svgs.OpenAccount}
+       />
+            <Item
+            itemname="My Drawing Accounts"
+            svg={Svgs.DrawingAccount}
+       />
+                <Item
+            itemname="My Deposit Accounts"
+            svg={Svgs.DepositAccount}
+        />
+    
+            <Item
+            itemname="My Gold Accounts"
+            svg={Svgs.GoldAccount}
+       />
+              <Item
+            itemname="My Credit Accounts"
+            svg={Svgs.CreditAccount}
+       />
+               <Item
+            itemname="My Investment Accounts"
+            svg={Svgs.Investment}
+       />
+        <Item
+            itemname="POS"
+            svg={Svgs.Pos}
+       />
+        </ScrollView>
+        
     );
 };
 
