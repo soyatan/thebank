@@ -1,5 +1,10 @@
 import {StyleSheet} from 'react-native';
-import {width as w, height as h, width} from '../../../constants/Metrics';
+import {
+  width,
+  height,
+  marginHorizontal,
+  textMargin,
+} from '../../../constants/Metrics';
 
 export default styles = StyleSheet.create({
   container: {
