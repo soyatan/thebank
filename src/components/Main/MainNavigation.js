@@ -3,6 +3,7 @@ import {StatusBar} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 import AuthScreen from '../Auth/AuthScreen/AuthScreen';
+import PasswordScreen from '../Auth/PasswordScreen/PasswordScreen';
 
 const Main = createStackNavigator();
 
@@ -23,6 +24,11 @@ const MainNavigation = () => {
             <Main.Screen
               name="Auth"
               component={AuthScreen}
+              options={{headerShown: false}}
+            />
+            <Main.Screen
+              name="Password"
+              component={PasswordScreen}
               options={{headerShown: false}}
             />
           </Main.Navigator>
