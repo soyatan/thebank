@@ -4,6 +4,7 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 import AuthScreen from '../Auth/AuthScreen/AuthScreen';
 import PasswordScreen from '../Auth/PasswordScreen/PasswordScreen';
+import PasswordHeader from '../Auth/PasswordScreen/PasswordHeader';
 
 const Main = createStackNavigator();
 
@@ -20,7 +21,9 @@ const MainNavigation = () => {
       <>
         <StatusBar barStyle={'light-content'} backgroundColor={'red'} />
         <NavigationContainer>
-          <Main.Navigator>
+          <Main.Navigator
+            initialRouteName="Password"
+            options={(header = () => PasswordHeader())}>
             <Main.Screen
               name="Auth"
               component={AuthScreen}
@@ -29,7 +32,7 @@ const MainNavigation = () => {
             <Main.Screen
               name="Password"
               component={PasswordScreen}
-              options={{headerShown: false}}
+              options={{header: () => PasswordHeader()}}
             />
           </Main.Navigator>
         </NavigationContainer>
