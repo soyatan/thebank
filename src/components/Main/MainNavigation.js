@@ -23,18 +23,23 @@ const MainNavigation = () => {
       <>
         <StatusBar barStyle={'light-content'} backgroundColor={'red'} />
         <NavigationContainer>
+          <Main.Navigator initialRouteName="Password">
           <Main.Navigator
             initialRouteName="Accounts"
             options={(header = () => PasswordHeader())}>
             <Main.Screen
               name="Auth"
               component={AuthScreen}
-              options={{headerShown: false}}
+              options={{
+                headerShown: false,
+              }}
             />
             <Main.Screen
               name="Password"
               component={PasswordScreen}
-              options={{header: () => PasswordHeader()}}
+              options={{
+                header: () => <PasswordHeader />,
+              }}
             />
             <Main.Screen name="Accounts" component={AccountsScreen} />
           </Main.Navigator>
