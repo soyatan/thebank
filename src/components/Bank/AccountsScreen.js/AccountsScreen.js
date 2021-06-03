@@ -1,7 +1,7 @@
 import React from 'react';
 import {ScrollView} from 'react-native';
-import Item from '../Common/Item';
-import {Svgs} from '../StylingConstants';
+import Item from '../../../Common/Item';
+import {Svgs} from '../../../StylingConstants';
 
 const AccountsScreen = props => {
   return (
