@@ -3,12 +3,12 @@ import {View, Text, TouchableOpacity} from 'react-native';
 
 import styles from './styles';
 
-export default PasswordScreen = () => {
+export default PasswordHeader = () => {
   //  console.log('test');
   return (
     <>
-      <View style={styles.container}>
-        <Text style={styles.textTitle}>lets remember password screen</Text>
+      <View style={styles.passwordHeader}>
+        <Text style={styles.textTitle}>Forgot My Password</Text>
       </View>
     </>
   );
