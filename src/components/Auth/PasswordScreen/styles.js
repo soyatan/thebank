@@ -13,8 +13,11 @@ export default styles = StyleSheet.create({
     backgroundColor: 'gray',
   },
   passwordHeader: {
-    opacity: 1,
-    flex: 1,
-    backgroundColor: 'gray',
+    backgroundColor: 'red',
+    height: height * 0.1,
+
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
 });
