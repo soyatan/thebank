@@ -1,6 +1,6 @@
 import React from 'react';
 import { Text,View,TouchableOpacity } from 'react-native';
-import Icon from '../Assets/Icon';
+import Icon from '../Common/Icon';
 import { Svgs } from '../StylingConstants'
 
 const Item = props => {
