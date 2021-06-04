@@ -5,9 +5,9 @@ import {Svgs} from '../../../StylingConstants';
 
 const CardsScreen = () => {
   return (
-    <ScrollView style={{flex: 1}}>
-      <Item itemname="My Accounts" svg={Svgs.Briefcase} />
-    </ScrollView>
+    <View>
+      <Text>Welcome to CARDS Screen</Text>
+    </View>
   );
 };
 
