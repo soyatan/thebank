@@ -8,7 +8,7 @@ import {
 
 import {Colors} from '../../../constants/Colors';
 import Fonts from '../../../constants/Fonts';
-console.log(Fonts);
+
 const {Families, Sizes} = Fonts;
 
 export default styles = StyleSheet.create({

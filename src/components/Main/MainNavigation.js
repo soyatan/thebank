@@ -8,6 +8,7 @@ import PasswordScreen from '../Auth/PasswordScreen/PasswordScreen';
 import PasswordHeader from '../Auth/PasswordScreen/PasswordHeader';
 import BankNavigation from '../Bank/BankNavigation/BankNavigation';
 import MenuMain from '../Menu/MenuMain/MenuMain';
+import MenuSub from '../Menu/MenuMain/MenuSub';
 
 const Main = createStackNavigator();
 
@@ -25,7 +26,7 @@ const MainNavigation = () => {
         <StatusBar barStyle={'light-content'} backgroundColor={'red'} />
         <NavigationContainer>
           <Main.Navigator
-            initialRouteName="Bank"
+            initialRouteName="Menu"
             options={(header = () => PasswordHeader())}>
             <Main.Screen
               name="Auth"
@@ -44,6 +45,7 @@ const MainNavigation = () => {
             <Main.Screen name="Bank" component={BankNavigation} />
             {/*GEÇİCİ OLARAK BURADA*/}
             <Main.Screen name="Menu" component={MenuMain} />
+            <Main.Screen name="Sub" component={MenuSub} />
           </Main.Navigator>
         </NavigationContainer>
       </>

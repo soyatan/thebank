@@ -1,5 +1,5 @@
 import React from 'react';
-import {ScrollView} from 'react-native';
+import {ScrollView, View, Text} from 'react-native';
 import Item from '../../../Common/Item';
 import {Svgs} from '../../../StylingConstants';
 

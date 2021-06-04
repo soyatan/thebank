@@ -14,7 +14,8 @@ const Item = props => {
         alignItems: 'center',
         height: 60,
         //  padding:3,
-      }}>
+      }}
+      onPress={props.onPress}>
       <View style={{flex: 0.1, padding: 5, marginHorizontal: 10}}>
         <Icon svg={props.svg} iconStyle={{color: 'red'}}></Icon>
       </View>
