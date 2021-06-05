@@ -14,7 +14,7 @@ export default StyleSheet.create({
     {
         flex: 0.1,
         padding: 5,
-        marginHorizontal: 10
+        marginHorizontal: Metrics.width*0.025
     },
     textSty:{
         flex: 0.9
