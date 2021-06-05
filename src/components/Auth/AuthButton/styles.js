@@ -9,7 +9,7 @@ const {width, height, marginHorizontal, textMargin} = Metrics;
 
 export default styles = StyleSheet.create({
   circularButton: {
-    backgroundColor: 'red',
+    backgroundColor: Colors.mainColor,
     borderRadius: width * 0.1,
     borderWidth: 1,
     height: height * 0.075,

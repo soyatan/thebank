@@ -9,6 +9,7 @@ import PasswordHeader from '../Auth/PasswordScreen/PasswordHeader';
 import BankNavigation from '../Bank/BankNavigation/BankNavigation';
 import MenuMain from '../Menu/MenuMain/MenuMain';
 import MenuSub from '../Menu/MenuMain/MenuSub';
+import {Colors} from '../../constants/Colors';
 
 const Main = createStackNavigator();
 
@@ -23,11 +24,12 @@ const MainNavigation = () => {
   if (!loggedInUser) {
     return (
       <>
-        <StatusBar barStyle={'light-content'} backgroundColor={'red'} />
+        <StatusBar
+          barStyle={'light-content'}
+          backgroundColor={Colors.mainColor}
+        />
         <NavigationContainer>
-          <Main.Navigator
-            initialRouteName="Menu"
-            options={(header = () => PasswordHeader())}>
+          <Main.Navigator initialRouteName="Password">
             <Main.Screen
               name="Auth"
               component={AuthScreen}
@@ -39,18 +41,23 @@ const MainNavigation = () => {
               name="Password"
               component={PasswordScreen}
               options={{
-                header: () => <PasswordHeader />,
+                header: () => <PasswordHeader bgColor={'lightGray'} />,
               }}
             />
             <Main.Screen name="Bank" component={BankNavigation} />
             {/*GEÇİCİ OLARAK BURADA*/}
-            <Main.Screen name="Menu" component={MenuMain}
-            options={{
-              title:'Menu'            }
-
-            } />
-            <Main.Screen name="Sub" component={MenuSub}
-             options={({ route }) => ({ title: route.params.name })} />
+            <Main.Screen
+              name="Menu"
+              component={MenuMain}
+              options={{
+                title: 'Menu',
+              }}
+            />
+            <Main.Screen
+              name="Sub"
+              component={MenuSub}
+              options={({route}) => ({title: route.params.name})}
+            />
           </Main.Navigator>
         </NavigationContainer>
       </>

@@ -29,13 +29,19 @@ export default styles = StyleSheet.create({
   textTitle: {
     fontSize: Sizes.twenty,
     fontFamily: Families.bold,
+    color: Colors.mainGray,
 
     textAlignVertical: 'center',
   },
-  textNormal: {fontSize: Sizes.fourteen, fontFamily: Families.bold},
+  textNormal: {
+    fontSize: Sizes.fourteen,
+    fontFamily: Families.bold,
+    color: Colors.mainGray,
+  },
   circle: {
     borderWidth: 1,
     borderRadius: 25,
+    borderColor: Colors.mainWhite,
     width: width * 0.11,
     height: width * 0.11,
     alignItems: 'center',

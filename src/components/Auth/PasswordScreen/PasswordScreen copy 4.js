@@ -8,19 +8,17 @@ import LinearGradient from 'react-native-linear-gradient';
 import Circle from './Circle';
 
 import styles from './styles';
-import {Grads} from '../../../constants/Colors';
 
 export default PasswordScreen = () => {
-  const GR = Grads.lightGray;
   const [ID, setID] = useState('55232380');
   //  console.log('test');
   return (
     <>
       <LinearGradient
-        colors={GR.colors}
+        colors={['#4f5b66', '#a7adba']}
         style={styles.container}
-        start={GR.start}
-        end={GR.end}>
+        start={{x: 0, y: 0}}
+        end={{x: 1, y: 1}}>
         <View style={styles.stagesContainer}>
           <Circle />
           <Circle />

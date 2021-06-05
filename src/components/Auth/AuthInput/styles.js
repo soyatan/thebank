@@ -14,6 +14,7 @@ export default styles = StyleSheet.create({
     borderWidth: 1,
     borderRadius: width * 0.02,
     height: height * 0.075,
+    borderColor: Colors.mainWhite,
   },
   rectangleSmallInputContainer: {
     marginVertical: height * 0.015,
@@ -21,6 +22,7 @@ export default styles = StyleSheet.create({
     borderWidth: 1,
     borderRadius: width * 0.02,
     height: height * 0.075,
+    borderColor: Colors.mainWhite,
   },
   rectangleMediumInputContainer: {
     marginVertical: height * 0.015,
@@ -28,6 +30,7 @@ export default styles = StyleSheet.create({
     borderWidth: 1,
     borderRadius: width * 0.02,
     height: height * 0.075,
+    borderColor: Colors.mainWhite,
   },
   textinput: {},
 });
