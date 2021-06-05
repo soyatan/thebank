@@ -26,7 +26,7 @@ const MainNavigation = () => {
         <StatusBar barStyle={'light-content'} backgroundColor={'red'} />
         <NavigationContainer>
           <Main.Navigator
-            initialRouteName="Password"
+            initialRouteName="Menu"
             options={(header = () => PasswordHeader())}>
             <Main.Screen
               name="Auth"
@@ -44,8 +44,13 @@ const MainNavigation = () => {
             />
             <Main.Screen name="Bank" component={BankNavigation} />
             {/*GEÇİCİ OLARAK BURADA*/}
-            <Main.Screen name="Menu" component={MenuMain} />
-            <Main.Screen name="Sub" component={MenuSub} />
+            <Main.Screen name="Menu" component={MenuMain}
+            options={{
+              title:'Menu'            }
+
+            } />
+            <Main.Screen name="Sub" component={MenuSub}
+             options={({ route }) => ({ title: route.params.name })} />
           </Main.Navigator>
         </NavigationContainer>
       </>

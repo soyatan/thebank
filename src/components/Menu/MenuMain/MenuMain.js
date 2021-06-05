@@ -50,8 +50,7 @@ const MenuMain = ({navigation}) => {
             itemname={item.item.name}
             svg={item.item.iconName}
             onPress={() =>
-              navigation.navigate('Sub', {menu: item.item.subMenu})
-            }
+              navigation.navigate('Sub',{name:item.item.name,menu: item.item.subMenu})            }
           />
         );
       }}
