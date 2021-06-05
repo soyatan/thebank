@@ -29,7 +29,16 @@ const MainNavigation = () => {
           backgroundColor={Colors.mainColor}
         />
         <NavigationContainer>
-          <Main.Navigator initialRouteName="Password">
+          <Main.Navigator
+            initialRouteName="Password"
+            options={(header = () => PasswordHeader())}
+            screenOptions={{
+              headerTitleAlign: 'center',
+              headerStyle: {
+                backgroundColor: Colors.mainColor,
+              },
+              headerTintColor: Colors.mainWhite,
+            }}>
             <Main.Screen
               name="Auth"
               component={AuthScreen}
@@ -65,7 +74,6 @@ const MainNavigation = () => {
   } else
     return (
       <>
-        <StatusBar barStyle={'light-content'} backgroundColor={'red'} />
         <NavigationContainer>
           <Main.Navigator>
             <Main.Screen name="Bank" component={BankNavigation} />
