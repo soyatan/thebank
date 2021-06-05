@@ -2,8 +2,7 @@ import React from 'react';
 import MainNavigation from './components/Main/MainNavigation';
 import store from './redux/store';
 import {Provider} from 'react-redux';
-import { StatusBar } from 'react-native';
-import {Colors} from './constants/Colors'
+import Footer from './components/Footer/Footer';
 
 export default App = () => {
   return (
@@ -11,6 +10,7 @@ export default App = () => {
         <StatusBar barStyle={'light-content'} backgroundColor={Colors.mainColor} />
         
       <MainNavigation />
+      <Footer />
     </Provider>
   );
 };
