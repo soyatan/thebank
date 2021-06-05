@@ -26,7 +26,7 @@ const MainNavigation = () => {
         <StatusBar barStyle={'light-content'} backgroundColor={'red'} />
         <NavigationContainer>
           <Main.Navigator
-            initialRouteName="Password"
+            initialRouteName="Menu"
             options={(header = () => PasswordHeader())}>
             <Main.Screen
               name="Auth"
