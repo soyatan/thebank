@@ -10,6 +10,7 @@ import BankNavigation from '../Bank/BankNavigation/BankNavigation';
 import MenuMain from '../Menu/MenuMain/MenuMain';
 import MenuSub from '../Menu/MenuMain/MenuSub';
 import {Colors} from '../../constants/Colors';
+import BankHeader from '../Bank/BankHeader/BankHeader';
 
 const Main = createStackNavigator();
 
@@ -30,7 +31,7 @@ const MainNavigation = () => {
         />
         <NavigationContainer>
           <Main.Navigator
-            initialRouteName="Password"
+            initialRouteName="Bank"
             //options={(header = () => PasswordHeader())}
             screenOptions={{
               headerTitleAlign: 'center',
@@ -53,8 +54,14 @@ const MainNavigation = () => {
                 header: () => <PasswordHeader bgColor={'darkGray'} />,
               }}
             />
-            <Main.Screen name="Bank" component={BankNavigation} />
-            {/*GEÇİCİ OLARAK BURADA*/}
+            <Main.Screen
+              name="Bank"
+              component={BankNavigation}
+              options={{
+                headerShown: false,
+              }}
+            />
+
             <Main.Screen
               name="Menu"
               component={MenuMain}

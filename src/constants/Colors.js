@@ -13,9 +13,9 @@ export const Grads = {
     end: {x: 0.5, y: 0.5},
   },
   lightGray: {
-    colors: ['#999999', '#333333'],
-    start: {x: 0.3, y: 0},
-    end: {x: 0.9, y: 0.7},
+    colors: ['#ebecee', '#65737e'],
+    start: {x: -0.1, y: -0.5},
+    end: {x: 1, y: 1},
   },
 };
 
