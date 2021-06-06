@@ -7,6 +7,7 @@ import GoldAccount from '../Assets/Svgs/goldAccount.svg';
 import Investment from '../Assets/Svgs/investment.svg';
 import Pos from '../Assets/Svgs/pos.svg';
 import OpenAccount from '../Assets/Svgs/newAccount.svg';
+import Power from '../Assets/Svgs/power.svg';
 
 export default Svgs = {
   CreditAccount,
@@ -18,4 +19,5 @@ export default Svgs = {
   Investment,
   OpenAccount,
   Pos,
+  Power,
 };
