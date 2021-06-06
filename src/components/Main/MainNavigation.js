@@ -31,7 +31,7 @@ const MainNavigation = () => {
         <NavigationContainer>
           <Main.Navigator
             initialRouteName="Password"
-            options={(header = () => PasswordHeader())}
+            //options={(header = () => PasswordHeader())}
             screenOptions={{
               headerTitleAlign: 'center',
               headerStyle: {
@@ -50,7 +50,7 @@ const MainNavigation = () => {
               name="Password"
               component={PasswordScreen}
               options={{
-                header: () => <PasswordHeader bgColor={'lightGray'} />,
+                header: () => <PasswordHeader bgColor={'darkGray'} />,
               }}
             />
             <Main.Screen name="Bank" component={BankNavigation} />

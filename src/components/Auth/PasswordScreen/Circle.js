@@ -3,12 +3,12 @@ import {View, Text, TouchableOpacity} from 'react-native';
 
 import styles from './styles';
 
-export default Circle = () => {
+export default Circle = ({no}) => {
   //  console.log('test');
   return (
     <>
       <View style={styles.circle}>
-        <Text style={styles.textTitle}>1</Text>
+        <Text style={styles.textTitle}>{no}</Text>
       </View>
     </>
   );

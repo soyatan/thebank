@@ -11,7 +11,7 @@ import styles from './styles';
 import {Grads} from '../../../constants/Colors';
 
 export default PasswordScreen = () => {
-  const GR = Grads.lightGray;
+  const GR = Grads.darkGray;
   const [ID, setID] = useState('55232380');
   //  console.log('test');
   return (
@@ -22,10 +22,10 @@ export default PasswordScreen = () => {
         start={GR.start}
         end={GR.end}>
         <View style={styles.stagesContainer}>
-          <Circle />
-          <Circle />
-          <Circle />
-          <Circle />
+          <Circle no={1} />
+          <Circle no={2} />
+          <Circle no={3} />
+          <Circle no={4} />
         </View>
         <Text style={styles.textTitle}>Personal Information</Text>
         <View style={styles.verticalSpacerSmall}></View>
